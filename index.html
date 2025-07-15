@@ -17,11 +17,11 @@
     <!-- MAIN -->
     <main>
       <div class="bg"></div>
-      <img class="bg-text" src="asset/img/Text Background.svg" alt="My Name" />
-      <img class="vector1" src="asset/img/ThisIs.svg" alt="This is" />
+      <img class="bg-text" src="asset/img/Text Background.svg" alt="My Name" inverted/>
+      <img class="vector1" src="asset/img/ThisIs.svg" alt="This is" inverted/>
       <!-- MENU NAVBAR  -->
       <nav class="navbar">
-        <div class="hamburger" id="hamburger">
+        <div id="hamburger" role="button" tabindex="0">
           <span></span>
           <span></span>
           <span></span>
@@ -46,92 +46,81 @@
             <!-- stacks -->
       <div class="stacks">
         <div class="stacks-inner">
-          <p>Graphic Designer</p>
-          <img src="asset/img/Light logo.svg" height="10" alt="logo" />
-          <p>Web Developer</p>
-          <img src="asset/img/Light logo.svg" height="10" alt="logo" />
-          <p>UX Engineer</p>
-          <img src="asset/img/Light logo.svg" height="10" alt="logo" />
-          <p>Graphic Designer</p>
-          <img src="asset/img/Light logo.svg" height="10" alt="logo" />
-          <p>Web Developer</p>
-          <img src="asset/img/Light logo.svg" height="10" alt="logo" />
-          <p>UX Engineer</p>
-          <img src="asset/img/Light logo.svg" height="10" alt="logo" />
-          <p>Graphic Designer</p>
-          <img src="asset/img/Light logo.svg" height="10" alt="logo" />
-          <p>Web Developer</p>
-          <img src="asset/img/Light logo.svg" height="10" alt="logo" />
-          <p>UX Engineer</p>
-          <img src="asset/img/Light logo.svg" height="10" alt="logo" />
-          <p>Graphic Designer</p>
-          <img src="asset/img/Light logo.svg" height="10" alt="logo" />
-          <p>Web Developer</p>
-          <img src="asset/img/Light logo.svg" height="10" alt="logo" />
-          <p>UX Engineer</p>
-          <img src="asset/img/Light logo.svg" height="10" alt="logo" />
-          <p>Graphic Designer</p>
-          <img src="asset/img/Light logo.svg" height="10" alt="logo" />
-          <p>Web Developer</p>
-          <img src="asset/img/Light logo.svg" height="10" alt="logo" />
-          <p>UX Engineer</p>
-          <img src="asset/img/Light logo.svg" height="10" alt="logo" />
-          <p>Graphic Designer</p>
-          <img src="asset/img/Light logo.svg" height="10" alt="logo" />
-          <p>Web Developer</p>
-          <img src="asset/img/Light logo.svg" height="10" alt="logo" />
-          <p>UX Engineer</p>
-          <img src="asset/img/Light logo.svg" height="10" alt="logo" />
-          <p>Graphic Designer</p>
-          <img src="asset/img/Light logo.svg" height="10" alt="logo" />
-          <p>Web Developer</p>
-          <img src="asset/img/Light logo.svg" height="10" alt="logo" />
-          <p>UX Engineer</p>
-          <img src="asset/img/Light logo.svg" height="10" alt="logo" />
+          <p>Graphic Designer</p><img src="asset/img/Light logo.svg" height="10" alt="logo" inverted />
+          <p>Web Developer</p><img src="asset/img/Light logo.svg" height="10" alt="logo" inverted/>
+          <p>UX Engineer</p><img src="asset/img/Light logo.svg" height="10" alt="logo" inverted/>
+          <p>Graphic Designer</p><img src="asset/img/Light logo.svg" height="10" alt="logo" inverted />
+          <p>Web Developer</p><img src="asset/img/Light logo.svg" height="10" alt="logo" inverted/>
+          <p>UX Engineer</p><img src="asset/img/Light logo.svg" height="10" alt="logo" inverted/>
+          <p>Graphic Designer</p><img src="asset/img/Light logo.svg" height="10" alt="logo" inverted />
+          <p>Web Developer</p><img src="asset/img/Light logo.svg" height="10" alt="logo" inverted/>
+          <p>UX Engineer</p><img src="asset/img/Light logo.svg" height="10" alt="logo" inverted/>
+          <p>Graphic Designer</p><img src="asset/img/Light logo.svg" height="10" alt="logo" inverted />
+          <p>Web Developer</p><img src="asset/img/Light logo.svg" height="10" alt="logo" inverted/>
+          <p>UX Engineer</p><img src="asset/img/Light logo.svg" height="10" alt="logo" inverted/>
         </div>
       </div>
         <!-- IMAGE -->
-        <img class="img-me" src="asset/img/King of the world 1.svg" alt="Pict me" />
+        <img class="img-me" src="asset/img/King of the world 1.svg" alt="Pict me"/>
 
       <!-- MENU LAYER -->
       <div id="menu" class="menu">
+        <!-- MENU TOP -->
         <nav class="top">
-          <nav></nav>
-          <img src="asset/img/Bold Logo.svg" height="40" alt="logo" />
-          <a href="#contact"><p>Contact</p></a>
+          <a id="hamburger-menu">X Close</a>
+          <img src="asset/img/Logo.svg" class="logo" height="40" alt="logo"/>
+          <a href="#contact">Get in touch</a>
         </nav>
-
+      <!-- MENU MID -->
         <div class="mid">
           <div class="mid-item">
             <div class="nav">
-              <a href="#">HOMe`</a>
-              <a href="#">PROJe`CT</a>
-              <a href="#">a`BOUT</a>
-              <a href="#">CONTa`CT</a>
+              <a href="home.html" disabled>HOMe`</a>
+              <a href="project.html">PROJe`CT</a>
+              <a href="about.html">a`BOUT</a>
+              <a href="contact.html">CONTa`CT</a>
             </div>
             <div class="theme">
               <p>Theme:</p>
-              <p>Moon</p>
+              <img id="theme" role="button" tabindex="0" src="asset/img/moon.svg" alt="Dark theme btn">
             </div>
           </div>
           <div class="mid-img">
-            <img src="asset/img/menu/IMG1.svg" alt="">
+            <img src="asset/img/menu/IMG1.svg" alt="Image Menu">
           </div>
         </div>
         <div class="mid2">
           <div class="resume"></div>
           <div class="mid-menu"></div>
         </div>
-
+        <!-- HIDDEN -->
+        <div class="menu-hidden">
+          <ul class="menu-hidden-item gap">
+            <li class="rotate"><a href="home.html">Home</a></li>
+            <li class="rotate"><a href="project.html">Project</a></li>
+            <li class="rotate"><a href="about.html">About</a></li>
+            <li class="rotate"><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="menu-hidden-item">
+            <div class="btm-social"><a href="">R</a></div>
+            <div class="btm-social"><a href="">R</a></div>
+            <div class="btm-social"><a href="">R</a></div>
+          </div>
+        </div>
+      <!-- BOTTOM -->
         <div class="bottom">
-          <p>Download resume</p>
-          <div class="social">
-            <a href="">LinkedIn</a>
-            <a href="">Github</a>
-            <a href="">Instagram</a>
+          <div class="bottom-item">
+                <p><a href="">Download resume</a></p>
+                <div class="social">
+                  <a href="">LinkedIn</a>
+                  <a href="">Github</a>
+                  <a href="">Instagram</a>
+                </div>
           </div>
         </div>
       </div>
+
+
     </main>
 
     <!-- SCRIPT -->
