@@ -5,23 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="test.css">
     <title>Project</title>
+
+    <style> 
+      .ligo { 
+        filter: invert(100%) hue-rotate(180deg) contrast(120%);
+      }
+    </style>
 </head>
 <body>
-<div class="stacks">
-  <div class="stacks-inner">
-    <div class="stacks-track" id="scrollTrack">
-      <span>Graphic Designer</span><img src="..." />
-      <span>Web Developer</span><img src="..." />
-      <span>UX Engineer</span><img src="..." />
-    </div>
-  </div>
-</div>
 
-<script>
-  const track = document.getElementById("scrollTrack");
-  track.innerHTML += track.innerHTML;
-  let scrollPosition = 0;
-</script>
+          <img src="asset/img/Logo.svg" class="ligo" height="25" alt="logo"/>
 
 </body>
 </html>

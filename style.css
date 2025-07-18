@@ -102,6 +102,16 @@ main  {
     box-sizing: border-box;
 }
 
+#toggle {
+  display: none;
+  width: 2vw;
+  min-width: 20px;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  z-index: 10;
+}
+
 main .img-me {
   position: block;
   max-width: 500px;
@@ -320,11 +330,6 @@ header .quote{
     width: 100%;
 }
 
-.logo {
-  mix-blend-mode: plus-lighter;
-  background-color: transparent;
-}
-
 .menu .mid {
     display: flex;
     flex-direction: row;
@@ -465,8 +470,8 @@ header .quote{
     gap: 10px;
   }
   .mid-item {
-    flex-direction: column-reverse;
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 30px;
   }
   .vector1 {
     z-index: 9;
@@ -496,6 +501,9 @@ header .quote{
     align-content: flex-start;
     align-items: stretch;
   }
+  #toggle {
+    display: flex;
+  }
   .menu {
     display: flex;
     flex-direction: column-reverse;
@@ -504,10 +512,6 @@ header .quote{
   }
   #hamburger-menu {
     display: none;
-  }
-  .logo {
-    mix-blend-mode: screen;
-    background-color: transparent;
   }
   .menu .mid {
     display: none;
@@ -522,7 +526,7 @@ header .quote{
     display: none;
   }
   .top img{
-    height: 30px;
+    height: 20px;
   }
   .role {
     display: none;
