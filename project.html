@@ -13,6 +13,20 @@
       rel="stylesheet"
     />
     <style>
+        body{
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          height: fit-content;        
+          border-bottom: 3px solid transparent;
+          border-image-slice: 1;
+          border-image-source: var(--border-gradient);
+          gap: 50px;
+          padding: 0 40px 0px 40px;
+          overflow: auto;
+          background-color: var(--secondary-color);
+        }
         h1 {
             color: rgb(255, 255, 255);
             text-align: center;
@@ -21,42 +35,154 @@
     </style>
   </head>
   <body>
-      <div class="stacks title-layer" alt="title page">
+      <img id="toggle" role="button" tabindex="0" src="asset/img/theme/Darks.svg" alt="toggle theme">
+
+      <!-- title layer -->
+      <div class="stacks title-layer" role="banner">
         <div class="bg"></div>
         <div class="stacks-inner" style="gap: 20px;" alt="stacks-inner">
-          <h1 style="font-size: 100px;">Project </h1>
-          <h1 style="font-size: 100px;">Project </h1>
-          <h1 style="font-size: 100px;">Project </h1>
-          <h1 style="font-size: 100px;">Project </h1>
-          <h1 style="font-size: 100px;">Project </h1>
+          <h1>Project </h1>
+          <h1>Project </h1>
+          <h1>Project </h1>
+          <h1>Project </h1>
+          <h1>Project </h1>
+          <h1>Project </h1>
+          <h1>Project </h1>
+        </div>
+      </div>      
+      
+      <!-- CUSTOM SELECT -->
+
+      <div class="div-filter" role="option">
+        <div class="custom-select-wrapper">
+            <select name="filter" id="filter" class="hidden-select">
+                <option value="ui_engineer">UI/UX</option>
+                <option value="web_development">WEBSITES DEVELOPMENT</option>
+                <option value="graphic_designer">GRAPHIC DESIGNER</option>
+            </select>
+
+            <div class="select-selected" tabindex="0">
+                <span class="selected-text">UI/UX</span>
+                <img class="arrow-down" src="asset/img/arrowDown.svg" alt="arrow-down" inverted>
+              </div>
+
+            <div class="select-items select-hide">
+                <div data-value="ui_engineer" tabindex="0">UI/UX</div>
+                <div data-value="web_development" tabindex="0">WEBSITES DEVELOPMENT</div>
+                <div data-value="graphic_designer" tabindex="0">GRAPHIC DESIGNER</div>
+            </div>
         </div>
       </div>
-    <!-- MAIN -->
-    <main>
-      <img id="toggle" role="button" tabindex="0" src="asset/img/theme/Darks.svg" alt="toggle theme">
-      <!-- MENU NAVBAR  -->
+    
+      <!-- PROJECT -->
+      <section id="projects" class="projects">
+
+        <div role="card" class="card" tabindex="0">
+          <img src="asset/img/Logo Project.svg" alt="Project 1">
+          <figure>
+            <div>
+              <figcaption>Evermode</figcaption>
+              <span>UI/UX</span>
+            </div>
+            <p class="description">Worked as a Graphic Designer Intern at a social commerce
+            startup that connects brands, and consumers to sell
+            everyday Muslim products. contributing to "Everpro," a
+            sub-brand offering solutions for online business growth.
+            </p>
+            <div class="cta">
+              <p>View</p>
+              <img src="asset/img/split.svg" alt="Split" inverted>
+            </div>  
+          </figure>
+        </div>
+        <div role="card" class="card" tabindex="0">
+          <img src="asset/img/Logo Project.svg" alt="Project 1">
+          <figure>
+            <div>
+              <figcaption>Evermode</figcaption>
+              <span>UI/UX</span>
+            </div>
+            <p class="description">Worked as a Graphic Designer Intern at a social commerce
+            startup that connects brands, and consumers to sell
+            everyday Muslim products. contributing to "Everpro," a
+            sub-brand offering solutions for online business growth.
+            </p>
+            <div class="cta">
+              <p>View</p>
+              <img src="asset/img/split.svg" alt="Split" inverted>
+            </div>  
+          </figure>
+        </div>
+        <div role="card" class="card" tabindex="0">
+          <img src="asset/img/Logo Project.svg" alt="Project 1">
+          <figure>
+            <div>
+              <figcaption>Evermode</figcaption>
+              <span>UI/UX</span>
+            </div>
+            <p class="description">Worked as a Graphic Designer Intern at a social commerce
+            startup that connects brands, and consumers to sell
+            everyday Muslim products. contributing to "Everpro," a
+            sub-brand offering solutions for online business growth.
+            </p>
+            <div class="cta">
+              <p>View</p>
+              <img src="asset/img/split.svg" alt="Split" inverted>
+            </div>  
+          </figure>
+        </div>
+        
+
+      </section>
+
+      <a class="more-btn" tabindex="0">
+        <div class="cta">
+              <p>See More</p>
+              <img src="asset/img/split.svg" alt="Split" inverted>
+        </div>  
+      </a>
+
+      <!-- FOOTER -->
+      <footer>
+        <div class="footer-title">
+          <h3>Start a project</h3>
+          <span>Let's Create your NEXT BIG IDEA.</span>
+          <div class="cta" tabindex="0">
+              <p>Get in Touch</p>
+              <img src="asset/img/split.svg" alt="Split" inverted>
+          </div> 
+        </div>
+        <div class="footer-item">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="">UI/UX Design</a></li>
+            <li><a href="">Web Development</a></li>
+            <li><a href="">Graphic Design</a></li>
+          </ul>
+        </div>
+        <div class="footer-item">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="">Mochsalmanrafadhlih</a></li>
+            <li><a href="">msalmanrafadhlih</a></li>
+            <li><a href="">example@gmail.com</a></li>
+          </ul>
+        </div>
+        <img class="bg-footer" src="asset/img/Ellipse.svg" alt="bg-footer" inverted> 
+      </footer>
+
+
+
+      <!-- HAMBURGER MENU -->
       <nav class="navbar">
-        <div id="hamburger" role="button" tabindex="0">
+        <div id="hamburger" role="button" tabindex="9">
           <span></span>
           <span></span>
           <span></span>
         </div>
       </nav>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       <!-- MENU LAYER -->
+
       <div id="menu" class="menu">
         <!-- MENU TOP -->
         <nav class="top">
@@ -113,7 +239,7 @@
         </div>
       </div>
 
-    </main>
+
 
     <!-- SCRIPT -->
     <script src="script.js"></script>

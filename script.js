@@ -80,3 +80,58 @@ window.addEventListener("DOMContentLoaded", () => {
   const savedTheme = localStorage.getItem("theme") || "dark";
   setTheme(savedTheme);
 });
+
+// DROPDOWN
+document.addEventListener("DOMContentLoaded", () => {
+  const customSelectWrappers = document.querySelectorAll(
+    ".custom-select-wrapper"
+  );
+  customSelectWrappers.forEach((wrapper) => {
+    const selectElement = wrapper.querySelector(".hidden-select");
+    const selectSelected = wrapper.querySelector(".select-selected");
+    const selectItems = wrapper.querySelector(".select-items");
+    const selectedTextSpan = selectSelected.querySelector(".selected-text");
+    selectedTextSpan.textContent =
+      selectElement.options[selectElement.selectedIndex].textContent;
+    selectSelected.addEventListener("click", (e) => {
+      e.stopPropagation();
+      closeAllSelect(selectSelected);
+      selectItems.classList.toggle("select-hide");
+      selectSelected.classList.toggle("select-arrow-active");
+    });
+    selectItems.querySelectorAll("div").forEach((item) => {
+      item.addEventListener("click", (e) => {
+        const selectedValue = e.target.getAttribute("data-value");
+        const selectedText = e.target.textContent;
+        selectElement.value = selectedValue;
+        selectedTextSpan.textContent = selectedText;
+        selectItems.querySelectorAll(".same-as-selected").forEach((el) => {
+          el.classList.remove("same-as-selected");
+        });
+        e.target.classList.add("same-as-selected");
+        selectItems.classList.add("select-hide");
+        selectSelected.classList.remove("select-arrow-active");
+        const event = new Event("change");
+        selectElement.dispatchEvent(event);
+      });
+    });
+  });
+  function closeAllSelect(elmnt) {
+    const arrNo = [];
+    const x = document.getElementsByClassName("select-items");
+    const y = document.getElementsByClassName("select-selected");
+    for (let i = 0; i < y.length; i++) {
+      if (elmnt == y[i]) {
+        arrNo.push(i);
+      } else {
+        y[i].classList.remove("select-arrow-active");
+      }
+    }
+    for (let i = 0; i < x.length; i++) {
+      if (arrNo.indexOf(i)) {
+        x[i].classList.add("select-hide");
+      }
+    }
+  }
+  document.addEventListener("click", closeAllSelect);
+});
