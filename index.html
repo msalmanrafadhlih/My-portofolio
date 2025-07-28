@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MochsaL</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" href="asset/img/Light logo.svg" />
+    <link rel="icon" type="image/png" href="asset/img/Logo.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -45,8 +45,8 @@
           </p>
         </header>
             <!-- stacks -->
-      <div class="stacks">
-        <div class="stacks-inner">
+      <div class="stacks" alt="stacks">
+        <div class="stacks-inner" alt="stacks-inner">
           <p>Graphic Designer</p><img src="asset/img/Light logo.svg" height="10" alt="logo" inverted />
           <p>Web Developer</p><img src="asset/img/Light logo.svg" height="10" alt="logo" inverted/>
           <p>UX Engineer</p><img src="asset/img/Light logo.svg" height="10" alt="logo" inverted/>
@@ -68,7 +68,7 @@
       <div id="menu" class="menu">
         <!-- MENU TOP -->
         <nav class="top">
-          <a id="hamburger-menu">X Close</a>
+          <a id="hamburger-menu" tabindex="0">X Close</a>
           <img src="asset/img/Logo.svg" class="logo" height="25" alt="logo" inverted/>
           <a href="#contact">Get in touch</a>
         </nav>
@@ -76,7 +76,7 @@
         <div class="mid">
           <div class="mid-item">
             <div class="nav">
-              <a href="home.html" disabled>HOMe`</a>
+              <a href="home.html" tabindex="-1" disabled>HOMe`</a>
               <a href="project.html">PROJe`CT</a>
               <a href="about.html">a`BOUT</a>
               <a href="contact.html">CONTa`CT</a>
@@ -97,7 +97,7 @@
         <!-- HIDDEN -->
         <div class="menu-hidden">
           <ul class="menu-hidden-item gap">
-            <li class="rotate"><a href="home.html">Home</a></li>
+            <li class="rotate"><a href="home.html" tabindex="-1" disabled>Home</a></li>
             <li class="rotate"><a href="project.html">Project</a></li>
             <li class="rotate"><a href="about.html">About</a></li>
             <li class="rotate"><a href="contact.html">Contact</a></li>
