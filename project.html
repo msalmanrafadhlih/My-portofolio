@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MochsaL</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" href="asset/img/Logo.svg" />
+    <link rel="icon" type="image/png" href="asset/img/Logo-pin2.svg"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,32 +13,12 @@
       rel="stylesheet"
     />
     <style>
-        body{
-          position: relative;
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
-          height: fit-content;        
-          border-bottom: 3px solid transparent;
-          border-image-slice: 1;
-          border-image-source: var(--border-gradient);
-          gap: 50px;
-          padding: 0 40px 0px 40px;
-          overflow: auto;
-          background-color: var(--secondary-color);
-        }
-        h1 {
-            color: rgb(255, 255, 255);
-            text-align: center;
-            font-size: 50px;
-        }
     </style>
   </head>
   <body>
       <img id="toggle" role="button" tabindex="0" src="asset/img/theme/Darks.svg" alt="toggle theme">
-
-      <!-- title layer -->
-      <div class="stacks title-layer" role="banner">
+      <!-- TITTLE LAYER -->
+      <div class="title-layer" role="banner">
         <div class="bg"></div>
         <div class="stacks-inner" style="gap: 20px;" alt="stacks-inner">
           <h1>Project </h1>
@@ -52,7 +32,6 @@
       </div>      
       
       <!-- CUSTOM SELECT -->
-
       <div class="div-filter" role="option">
         <div class="custom-select-wrapper">
             <select name="filter" id="filter" class="hidden-select">
@@ -73,10 +52,10 @@
             </div>
         </div>
       </div>
-    
+
       <!-- PROJECT -->
       <section id="projects" class="projects">
-
+        <!-- Project 1 -->
         <div role="card" class="card" tabindex="0">
           <img src="asset/img/Logo Project.svg" alt="Project 1">
           <figure>
@@ -95,44 +74,26 @@
             </div>  
           </figure>
         </div>
-        <div role="card" class="card" tabindex="0">
-          <img src="asset/img/Logo Project.svg" alt="Project 1">
-          <figure>
-            <div>
-              <figcaption>Evermode</figcaption>
-              <span>UI/UX</span>
-            </div>
-            <p class="description">Worked as a Graphic Designer Intern at a social commerce
-            startup that connects brands, and consumers to sell
-            everyday Muslim products. contributing to "Everpro," a
-            sub-brand offering solutions for online business growth.
-            </p>
-            <div class="cta">
-              <p>View</p>
-              <img src="asset/img/split.svg" alt="Split" inverted>
-            </div>  
-          </figure>
-        </div>
-        <div role="card" class="card" tabindex="0">
-          <img src="asset/img/Logo Project.svg" alt="Project 1">
-          <figure>
-            <div>
-              <figcaption>Evermode</figcaption>
-              <span>UI/UX</span>
-            </div>
-            <p class="description">Worked as a Graphic Designer Intern at a social commerce
-            startup that connects brands, and consumers to sell
-            everyday Muslim products. contributing to "Everpro," a
-            sub-brand offering solutions for online business growth.
-            </p>
-            <div class="cta">
-              <p>View</p>
-              <img src="asset/img/split.svg" alt="Split" inverted>
-            </div>  
-          </figure>
-        </div>
-        
 
+        <!-- Project 2 -->
+        <div role="card" class="card" tabindex="0">
+          <img src="asset/img/Logo Project.svg" alt="Project 1">
+          <figure>
+            <div>
+              <figcaption>Evermode</figcaption>
+              <span>UI/UX</span>
+            </div>
+            <p class="description">Worked as a Graphic Designer Intern at a social commerce
+            startup that connects brands, and consumers to sell
+            everyday Muslim products. contributing to "Everpro," a
+            sub-brand offering solutions for online business growth.
+            </p>
+            <div class="cta">
+              <p>View</p>
+              <img src="asset/img/split.svg" alt="Split" inverted>
+            </div>  
+          </figure>
+        </div>
       </section>
 
       <a class="more-btn" tabindex="0">
@@ -171,8 +132,6 @@
         <img class="bg-footer" src="asset/img/Ellipse.svg" alt="bg-footer" inverted> 
       </footer>
 
-
-
       <!-- HAMBURGER MENU -->
       <nav class="navbar">
         <div id="hamburger" role="button" tabindex="9">
@@ -193,8 +152,8 @@
         <div class="mid">
           <div class="mid-item">
             <div class="nav">
-              <a href="home.html" tabindex="-1" disabled>HOMe`</a>
-              <a href="project.html">PROJe`CT</a>
+              <a href="index.html">HOMe`</a>
+              <a href="project.html" tabindex="-1" disabled>PROJe`CT</a>
               <a href="about.html">a`BOUT</a>
               <a href="contact.html">CONTa`CT</a>
             </div>
@@ -211,11 +170,12 @@
           <div class="resume"></div>
           <div class="mid-menu"></div>
         </div>
+
         <!-- HIDDEN -->
         <div class="menu-hidden">
           <ul class="menu-hidden-item gap">
-            <li class="rotate"><a href="home.html" tabindex="-1" disabled>Home</a></li>
-            <li class="rotate"><a href="project.html">Project</a></li>
+            <li class="rotate"><a href="index.html">Home</a></li>
+            <li class="rotate"><a href="project.html" tabindex="-1" disabled>Project</a></li>
             <li class="rotate"><a href="about.html">About</a></li>
             <li class="rotate"><a href="contact.html">Contact</a></li>
           </ul>

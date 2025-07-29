@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MochsaL</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" href="asset/img/Logo.svg" />
+    <link rel="icon" type="image/png" href="asset/img/Logo-pin2.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,19 +13,21 @@
       rel="stylesheet"
     />
     <style>
-        h1 {
-            color: rgb(255, 255, 255);
-            text-align: center;
-            font-size: 50px;
+      body, html {
+        height: 100%;
+      }
+
+      @media screen and (max-width: 651px) {
+        body {
+          height: fit-content;
         }
+      }
+      
     </style>
   </head>
   <body>
-    <h1>under construction</h1>
     <!-- MAIN -->
-    <main>
       <img id="toggle" role="button" tabindex="0" src="asset/img/theme/Darks.svg" alt="toggle theme">
-      <div class="bg"></div>
       <!-- MENU NAVBAR  -->
       <nav class="navbar">
         <div id="hamburger" role="button" tabindex="0">
@@ -35,6 +37,40 @@
         </div>
       </nav>
 
+      <!-- TITTLE LAYER -->
+      <div class="title-layer" role="banner">
+        <div class="bg"></div>
+        <div class="stacks-inner" style="gap: 20px;" alt="stacks-inner">
+          <h1>Contact </h1>
+          <h1>Contact </h1>
+          <h1>Contact </h1>
+          <h1>Contact </h1>
+          <h1>Contact </h1>
+        </div>
+      </div> 
+      
+      <section class="contact">
+        <div class="contact-item">
+          <div class="role view">
+            <p>CONTACT ME</p>
+            <hr />
+          </div>
+          <p>Providing a variety of creative solutions to help take your brand to the next level. Wheter you need graphic designs. Web development. UI/UX or something in between, we've got you covered with services tailored to fit your business properly.</p>
+          <span>Bringin creatiive visions to life through design - Available for freelance projects and collaborations</span>
+        </div>
+
+        <div class="contact-item">
+          <div class="form-group"><textarea id="message" type="name" name="name" class="custom-input" placeholder="NAME" required></textarea></div>
+          <div class="form-group"><textarea id="message" type="number" name="phone" class="custom-input" placeholder="PHONE" required></textarea></div>
+          <div class="form-group"><textarea id="message" name="email" class="custom-input" placeholder="EMAIL" required></textarea></div>
+        </div>
+
+        <div class="contact-item">
+          <div class="form-group">
+              <textarea id="message" name="message" class="custom-input textarea" placeholder="MESSAGE"></textarea>
+          </div>
+        </div>
+      </section>
 
 
 
@@ -57,10 +93,10 @@
         <div class="mid">
           <div class="mid-item">
             <div class="nav">
-              <a href="home.html" tabindex="-1" disabled>HOMe`</a>
+              <a href="index.html">HOMe`</a>
               <a href="project.html">PROJe`CT</a>
               <a href="about.html">a`BOUT</a>
-              <a href="contact.html">CONTa`CT</a>
+              <a href="contact.html" tabindex="-1" disabled>CONTa`CT</a>
             </div>
             <div class="theme">
               <p>Theme:</p>
@@ -78,10 +114,10 @@
         <!-- HIDDEN -->
         <div class="menu-hidden">
           <ul class="menu-hidden-item gap">
-            <li class="rotate"><a href="home.html" tabindex="-1" disabled>Home</a></li>
+            <li class="rotate"><a href="index.html">Home</a></li>
             <li class="rotate"><a href="project.html">Project</a></li>
             <li class="rotate"><a href="about.html">About</a></li>
-            <li class="rotate"><a href="contact.html">Contact</a></li>
+            <li class="rotate"><a href="contact.html" tabindex="-1" disabled>Contact</a></li>
           </ul>
           <div class="menu-hidden-item">
             <div class="btm-social" role="button">
@@ -112,8 +148,6 @@
           </div>
         </div>
       </div>
-
-    </main>
 
     <!-- SCRIPT -->
     <script src="script.js"></script>
