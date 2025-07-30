@@ -887,6 +887,7 @@ footer {
 
 /* ABOUT PAGE */
 
+/* ABOUT PAGE - INTRODUCTION */
 .section-about {
   display: flex;
   gap: 50px;
@@ -903,7 +904,6 @@ footer {
   width: 100%;
   height: 100%;
 }
-
 
 .introduction article {
   flex-grow: 1;
@@ -964,6 +964,19 @@ footer {
   letter-spacing: 1px;
 }
 
+/* ABOUT PAGE - PLAYGROUND */
+.playground {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  flex-direction: column
+}
+
+.playground-item {
+  display: flex;
+  flex-direction: column;
+}
 
 /* Media Screen */
 
