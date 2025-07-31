@@ -278,7 +278,7 @@ header .quote {
 
 .role p {
   color: var(--primary-color);
-  font-size: clamp(9px, 1vw, 1rem);
+  font-size: clamp(15px, 1vw, 1rem);
   margin: 0;
 }
 
@@ -861,7 +861,7 @@ footer {
   box-sizing: border-box;
   padding: 3px 3px;
   outline: none;
-  color: var(--primary-color);
+  color: gray;
   width: 100%;
   height: 100%;
   min-height: 50px;
@@ -872,13 +872,13 @@ footer {
 .custom-input:focus {
   text-transform: none;
   font-size: clamp(14px, 2vw, 16px);
-  color: var(--text-color);
+  color: var(--primary-color);
 }
 
 .custom-input::placeholder {
   font-family: "Adamina", serif;
   font-size: clamp(10px, 1vw, 14px);
-  color: gray
+  color: var(--text-color);
 }
 
 .textarea {
@@ -923,8 +923,19 @@ footer {
   font-size: 50px;
 }
 
+.h1 {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  width: fit-content;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
 .introduction article h1 {
-  font-size: clamp(3rem, 8vw, 150px); 
+  font-size: clamp(4rem, 10vw, 130px); 
   color: var(--text-color);
   white-space: nowrap;
   text-align: center;
@@ -948,7 +959,7 @@ footer {
 }
 
 .quotes {
-  padding: 30px 20px;
+  padding: 50vh 20px;
   width: 100%;
   height: fit-content;
   display: flex;
@@ -959,7 +970,7 @@ footer {
   opacity: 0.5;
   width: fit-content;
   color: var(--primary-color);
-  font-size: clamp(15px, 5vw, 25px);
+  font-size: clamp(15px, 3vw, 25px);
   text-align: center;
   letter-spacing: 1px;
 }
@@ -970,13 +981,59 @@ footer {
   width: 100%;
   min-height: 100vh;
   height: 100%;
-  flex-direction: column
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 20px;
+}
+
+.playground span {
+  font-size: clamp(10px, 2vw, 15px);
+  color: gray;
 }
 
 .playground-item {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  row-gap: 10px;
 }
+
+.playground-item > div:first-child {
+  flex-grow: 1;
+  font-size: clamp(10px, 2vw, 15px);
+  width: 50px;
+}
+
+.playground-item p {
+  font-size: clamp(7px, 2vw, 12px);
+}
+
+
+.playground-item ul {
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  font-size: clamp(5px, 1vw, 10px);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 150px;
+  gap: 5px;
+}
+.playground-item ul li {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);        
+  box-shadow: 0 4px 10px gray;
+  backdrop-filter: blur(20px);
+  border: 0.5px solid gray;
+  padding: 5px;
+  letter-spacing: 1px;
+}
+
+
 
 /* Media Screen */
 
@@ -1162,6 +1219,7 @@ footer {
   }
   .view {
     display: flex;
+
   }
 }
 
