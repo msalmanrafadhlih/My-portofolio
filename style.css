@@ -14,6 +14,7 @@
   );
   --image-invert: invert(0%) hue-rotate(180deg) contrast(120%);
   --image-grayscale: grayscale(0%) contrast(120%) brightness(90%);
+	--color-pallete: #121212;
 }
 
 .light {
